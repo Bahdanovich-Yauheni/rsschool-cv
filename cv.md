@@ -1,5 +1,5 @@
 1. Bahdanovich Yauheni;
-2. bahdanovich.yauheni@gmail.com;
+2. bahdanovich.yauheni@gmail.com, +375292415583;
 3. My goal is to acquire skills and knowledge of javascript development, but what is more importaint - I want to find out, will I be able to pass through this 5-months marathon?
 4. I've made several simple projects on Arduino platform;
 5. None, I'm still learning;
