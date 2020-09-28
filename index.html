@@ -2,77 +2,39 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Резюме</title>
+    <title>CV</title>
     <link rel="stylesheet" href="style.css">
   </head>
-    <body>
-<div>
-  <ol>
-    <li>Bahdanovich Yauheni;</li>
-    <li>bahdanovich.yauheni@gmail.com, +375292415583;</li>
-    <li>My goal is to acquire skills and knowledge of javascript development, but what is more importaint - I want to find out, will I be able to pass through this 5-months marathon?</li>
-    <li>I've made several simple projects on Arduino platform;</li>
-    <li>Code example
-      <pre>
-  #include &lt;LiquidCrystal_I2C.h&gt;
-  #include &lt;Wire.h&gt;
-  LiquidCrystal_I2C lcd(0x27,16,2);
-  int res = 0;
-  int timer = 0;
-  int btn = 0;
-  int n = 0;
-  void setup()
-  { pinMode(A3, INPUT);
-    pinMode(6, INPUT); 
-    pinMode(8, OUTPUT);
-    pinMode(9, OUTPUT);
-    lcd.init();    
-
-    // Print a message to the LCD.
-    lcd.backlight();
-    lcd.setCursor(4,0);
-    lcd.print("Timer, s");
-    digitalWrite(8, HIGH);
-   }
-  
-  void loop() {
-  res = analogRead(A3);
-  timer = 10 * res - 6900;
-  lcd.setCursor(6,1);
-  lcd.print(timer);
-  delay(10);
-  n = n + 1;
-  if (n == 100){
-    n = 0;
-    lcd.clear();
-    lcd.setCursor(4,0);
-    lcd.print("Timer, s");}
-  btn = digitalRead(6);
-  if (btn == 1)
-   {for (int i=timer; i >=0; i-- ){
-     lcd.setCursor(6,1);
-     lcd.print(i);
-     delay(990);
-     digitalWrite(9, HIGH);
-     delay(10);
-     digitalWrite(9, LOW);
-     lcd.clear();
-     lcd.setCursor(4,0);
-     lcd.print("Timer, s");
-     if (i == 1)
-     {digitalWrite(8, LOW);
-     delay(1000);     
-     digitalWrite(8, HIGH);}
-     }
-    }
-  }   </pre>
-   </li>
-   <li>I have expirience of a man, who learned computer science in the Univercity on a technical speciality, that wasn't connected with programming;</li>
-   <li>Higher education (Gomel State Technical University named after Sukhoi);</li>
-   <li>My English level is B1.</li>
- </ol>
- <p>There was a task to add a picture in addition to text, so here is it</p>
- <img width="315" height="160" src="image.jpg">
-</div>
-    </body>
+  <body>
+    <div>
+      <h1>Resume</h1>
+      <img src="./assets/img/image.jpg">
+      <ol>
+        <li>First Name, Last Name: <strong>Bahdanovich Yauheni</strong> ;</li>
+        <li>Contact Info: bahdanovich.yauheni@gmail.com, <strong>+375292415583</strong>;</li>
+        <li> Summary: My goal is to change my workspace, acquire skills and knowledge of javascript development, and, in the end, to get interesting job offer</li>
+        <li>Skills (e.g. programming languages, frameworks, methodologies, version control, tools etc.) Javascript, Git, a bit less - React;</li>
+        <li>Experience: 
+          <ul>
+           <li><a href="https://htmlacademy.ru/profile/id1361867">Htmlacademy profile</a></li>
+           <li><a href="https://www.codewars.com/users/Bahdanovich-Yauheni">Codewars profile</a></li>
+           <li><a href="https://github.com/Bahdanovich-Yauheni">Github profile</a></li>
+           <li>Rolling Scopes School 2020Q1 Final Task (team work)
+             <ul>
+               <li><a href="https://github.com/s-squad/rs-lang">Source</a></li>
+               <li><a href="https://rslang-team45-xmelsky.netlify.app/">Deploy</a></li>
+             </ul>
+           </li>
+          </ul>
+        </li>
+        <li>Education:
+          <ul>
+            <li>Gomel State Technical University named after Sukhoi</li>
+            <li>Rolling Scopes School 2020Q1 (Javascript) <a href="https://app.rs.school/certificate/w1ljeqvh">Certificate</a></li>
+          </ul>
+         </li>
+        <li>My English level: <strong>B1</strong>.</li>
+      </ol>
+    </div>
+  </body>
 </html>
