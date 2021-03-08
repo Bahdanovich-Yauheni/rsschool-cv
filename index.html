@@ -8,12 +8,16 @@
   <body>
     <div>
       <h1>Resume</h1>
-      <img src="./assets/img/image.jpg">
+      <figure>
+        <img src="./assets/img/image.jpg" alt="Avatar">
+        <figcaption>Моё фото</figcaption>
+      </figure>
+      <!-- <img src="./assets/img/image.jpg" alt="Avatar"> -->
       <ol>
         <li>First Name, Last Name: <strong>Bahdanovich Yauheni</strong> ;</li>
-        <li>Contact Info: bahdanovich.yauheni@gmail.com, <strong>+375292415583</strong>;</li>
+        <li>Contact Info: <strong>bahdanovich.yauheni@gmail.com</strong>, <strong>+375292415583</strong>;</li>
         <li> Summary: My goal is to change my workspace, acquire skills and knowledge of javascript development, and, in the end, to get interesting job offer</li>
-        <li>Skills (e.g. programming languages, frameworks, methodologies, version control, tools etc.) Javascript, Git, a bit less - React;</li>
+        <li><mark>Skills</mark> (e.g. programming languages, frameworks, methodologies, version control, tools etc.) Javascript, Git, a bit less - React;</li>
         <li>Experience: 
           <ul>
            <li><a href="https://htmlacademy.ru/profile/id1361867">Htmlacademy profile</a></li>
@@ -27,12 +31,13 @@
            </li>
           </ul>
         </li>
-        <li>Education:
+        <details>
+          <summary>Education:</summary>
           <ul>
             <li>Gomel State Technical University named after Sukhoi</li>
             <li>Rolling Scopes School 2020Q1 (Javascript) <a href="https://app.rs.school/certificate/w1ljeqvh">Certificate</a></li>
           </ul>
-         </li>
+      </details>
         <li>My English level: <strong>B1</strong>.</li>
       </ol>
     </div>

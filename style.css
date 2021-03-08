@@ -27,3 +27,7 @@ img {
     width: 200px;
     border-radius: 10%;    
 }
+
+summary {
+    font-size: 22px;
+}
